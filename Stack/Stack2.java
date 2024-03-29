@@ -22,6 +22,10 @@ public class Stack2<E> {
     }
 
     public void push(E num) {
+        if (filled == size){
+            System.out.println("Error!");
+            return;
+        }
         filled++;
         arr.add(filled - 1, num);
     }
