@@ -2,17 +2,12 @@ import java.util.*;
 
 public class BinaryTree<T> {
     B_TreeNode<T> root;
-    int level = 0;
-    int size = 0;
 
     BinaryTree(){}
     BinaryTree(B_TreeNode<T> root){
         this.root = root;
-        size++;
     }
-    public int getSize(){
-        return size;
-    }
+
     public List<B_TreeNode<T>> DFS(){
         return inorderIterative();
     }
